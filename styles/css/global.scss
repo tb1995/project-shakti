@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+h1 {
+  font-size: 5.5rem;
+  color: $primary;
+}
+
+li {
+  color: $primary !important;
+}

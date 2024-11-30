@@ -1,0 +1,16 @@
+@import '../../../styles/css/variables.scss';
+@import '../../../styles/css/breakpoints.scss';
+
+.container {
+  min-height: 100vh;
+  background-color: $primary;
+}
+
+.heading {
+  color: white;
+  margin: 0;
+}
+
+.secondaryColor {
+  color: $secondary;
+}
