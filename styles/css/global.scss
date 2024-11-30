@@ -1,10 +1,10 @@
 @import './variables.scss';
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 80px;
   color: $primary;
   font-family: var(--font-poppins), sans-serif;
-  font-weight: 700; // Use the specified weight
+  font-weight: 500;
 }
 
 li {
@@ -13,5 +13,54 @@ li {
 
 p {
   font-family: var(--font-open-sans), sans-serif;
-  font-weight: 400; // Use the specified weight
+  font-weight: 300; // Use the specified weight
+}
+
+.colorWhite {
+  color: white;
+}
+
+/* Base button styles */
+.button {
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  // line-height: 60px; /* Center text vertically */
+  display: inline-block;
+  border: 1px solid transparent; /* Default border for alignment */
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Primary button styles */
+.primary-button {
+  background-color: white;
+  color: $primary; /* Replace $primary with your actual color variable */
+  border-color: $primary;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+
+  &:hover {
+    border-color: white;
+    background-color: $primary; /* Invert colors on hover */
+    color: white;
+  }
+}
+
+/* Secondary button styles */
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+
+  &:hover {
+    background-color: white; /* Invert colors on hover */
+    color: $primary;
+  }
 }

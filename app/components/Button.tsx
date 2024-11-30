@@ -2,18 +2,18 @@ import React from 'react';
 
 interface ButtonProps {
   text: string;
-  url: string;
+  onClick: () => void; // Function to handle button clicks
   type: 'primary' | 'secondary'; // Enum-like union type
 }
 
-const Button: React.FC<ButtonProps> = ({ text, url, type }) => {
+const Button: React.FC<ButtonProps> = ({ text, onClick, type }) => {
   return (
-    <a
-      href={url}
-      className={`button ${type}`} // Add class based on type
+    <button
+      onClick={onClick}
+      className={`button ${type}-button`} // Add class based on type
     >
       {text}
-    </a>
+    </button>
   );
 };
 

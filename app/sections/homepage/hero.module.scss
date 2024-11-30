@@ -4,6 +4,31 @@
 .container {
   min-height: 100vh;
   background-color: $primary;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.textContainer {
+  flex: 1 1;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -100px;
+}
+
+.imageContainer {
+  flex: 1 1;
+  position: relative; /* Required for layout="fill" */
+  width: 100%; /* Make it as wide as its parent */
+  height: 50vh; /* Ensure it occupies the desired height */
+}
+
+.buttonContainer {
+  margin-top: 10px;
+  display: flex;
+  gap: 40px;
 }
 
 .heading {

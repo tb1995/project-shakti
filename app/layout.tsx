@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 
 // Define Poppins and Open Sans fonts
 const poppins = Poppins({
-  weight: ['400', '700'], // Specify weights you need
+  weight: ['400', '500', '700'], // Specify weights you need
   subsets: ['latin'], // Add subsets as per your language requirements
   variable: '--font-poppins', // Optional: Add a CSS variable for the font
 });
 
 const openSans = Open_Sans({
-  weight: ['400', '700'], // Specify weights you need
+  weight: ['300', '700'], // Specify weights you need
   subsets: ['latin'], // Add subsets as per your language requirements
   variable: '--font-open-sans', // Optional: Add a CSS variable for the font
 });
