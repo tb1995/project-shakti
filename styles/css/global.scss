@@ -3,8 +3,15 @@
 h1 {
   font-size: 5.5rem;
   color: $primary;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 700; // Use the specified weight
 }
 
 li {
   color: $primary !important;
+}
+
+p {
+  font-family: var(--font-open-sans), sans-serif;
+  font-weight: 400; // Use the specified weight
 }
