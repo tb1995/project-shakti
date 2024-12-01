@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import styles from './Form.module.scss'; // Make sure the SCSS file is in the same folder
+import styles from './form.module.scss'; // Make sure the SCSS file is in the same folder
 
 const Form = () => {
   return (
