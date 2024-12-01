@@ -13,6 +13,9 @@ export async function POST(req: NextRequest) {
 
     const { firstName, emailAddress } = body;
 
+    console.log(`name: ${firstName}`);
+    console.log(`email: ${emailAddress}`);
+
     // Validate the input
     if (!firstName || !emailAddress) {
       return Response.json(
@@ -23,7 +26,7 @@ export async function POST(req: NextRequest) {
 
     // Send the email
     const { data, error } = await resend.emails.send({
-      from: 'Shakti Website',
+      from: 'Shakti <talha@projectshakti.co.uk>',
       to: EMAIL_TO,
       subject: 'Hello world',
       react: EmailTemplate({
@@ -34,6 +37,7 @@ export async function POST(req: NextRequest) {
 
     // Handle potential errors from the email service
     if (error) {
+      console.log(error);
       return Response.json({ error }, { status: 500 });
     }
 
