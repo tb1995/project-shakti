@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import styles from './form.module.scss'; // Ensure this file exists
+import styles from './form.module.scss';
 
 const Form = () => {
   const [firstName, setFirstName] = useState('');

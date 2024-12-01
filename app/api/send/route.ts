@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     // Handle unexpected errors
     return Response.json(
-      { error: error.message || 'Something went wrong' },
+      { error: error || 'Something went wrong' },
       { status: 500 }
     );
   }
