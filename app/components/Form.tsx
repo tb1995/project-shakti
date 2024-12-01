@@ -6,12 +6,15 @@ const Form = () => {
   const [firstName, setFirstName] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [message, setMessage] = useState(''); // For displaying success or error messages
+  const [loading, setLoading] = useState(false); // Manage loading state for the button
+  const [submitted, setSubmitted] = useState(false); // Tracks if the form has been submitted successfully
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     // Reset message state
     setMessage('');
+    setLoading(true); // Disable the button
 
     try {
       const response = await fetch('/api/send', {
@@ -28,11 +31,14 @@ const Form = () => {
         setMessage('Email sent successfully!');
         setFirstName('');
         setEmailAddress('');
+        setSubmitted(true);
       } else {
         setMessage(data.error || 'Failed to send email.');
       }
     } catch (error) {
       setMessage('An error occurred. Please try again later.');
+    } finally {
+      setLoading(false); // Re-enable the button after the request completes
     }
   };
 
@@ -55,8 +61,9 @@ const Form = () => {
       <button
         type="submit"
         className={`${styles.formButton} backgroundColor-primary`}
+        disabled={submitted} // Disable the button when loading
       >
-        Submit
+        {loading ? 'Submitting...' : 'Submit'}
       </button>
       {message && <p className={styles.message}>{message}</p>}{' '}
       {/* Display success or error message */}
