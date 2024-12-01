@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import styles from './Navbar.module.scss';
+import styles from './navbar.module.scss';
 
 const Navbar = () => {
   const [showFullscreen, setShowFullscreen] = useState(false);
