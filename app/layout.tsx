@@ -1,6 +1,8 @@
 import { Poppins, Open_Sans } from 'next/font/google'; // Import Google Fonts
 import '@/styles/css/global.scss'; // Your global styles
 import { Metadata } from 'next';
+import Footer from './sections/Footer';
+import Navbar from './sections/Navbar';
 
 export const metadata: Metadata = {
   title: 'Project Shakti',
@@ -31,7 +33,9 @@ export default function RootLayout({
         className={`${poppins.variable} ${openSans.variable}`}
         style={{ margin: 0, padding: 0 }}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

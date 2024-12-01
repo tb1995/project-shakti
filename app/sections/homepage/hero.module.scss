@@ -7,6 +7,12 @@
   display: flex;
   padding: 0 100px;
   align-items: center;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    flex-direction: column;
+    font-size: 22px;
+    margin-top: 80px;
+  }
 }
 
 .textContainer {
@@ -16,6 +22,10 @@
   flex-direction: column;
 
   margin-top: -100px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    margin-top: 30px;
+  }
 }
 
 .imageContainer {
@@ -23,6 +33,22 @@
   position: relative; /* Required for layout="fill" */
   width: 100%; /* Make it as wide as its parent */
   height: 60vh; /* Ensure it occupies the desired height */
+  display: flex;
+  justify-content: flex-end;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    justify-content: center;
+  }
+}
+
+.heroImage {
+  height: 600px;
+  width: 600px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .buttonContainer {

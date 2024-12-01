@@ -6,4 +6,9 @@
   border: none;
   margin-left: 0;
   padding: 0;
+  width: 400px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    max-width: 250px;
+  }
 }

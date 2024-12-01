@@ -1,4 +1,5 @@
 @use './variables.scss' as vars;
+@use './breakpoints.scss' as breakpoints;
 
 html,
 body {
@@ -13,12 +14,22 @@ h1 {
   color: vars.$primary;
   font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
 h2 {
   font-size: 50px;
   font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 h3 {
@@ -26,6 +37,11 @@ h3 {
   font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
   margin-top: 0;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 li {
@@ -35,6 +51,10 @@ li {
 p {
   font-family: var(--font-open-sans), sans-serif;
   font-weight: 300; // Use the specified weight
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    text-align: center;
+  }
 }
 
 .colorWhite {

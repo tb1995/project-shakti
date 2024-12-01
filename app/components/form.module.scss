@@ -1,0 +1,29 @@
+@use '../../styles/css/variables' as vars;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between fields and button */
+  width: 100%;
+}
+
+.formField,
+.formButton {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures consistent sizing by including padding and border in width */
+}
+
+.formButton {
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  background-color: vars.$secondary;
+
+  &:hover {
+    background-color: #6c5d9b;
+  }
+}

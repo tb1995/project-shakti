@@ -37,7 +37,8 @@ const LeftRightContainer: React.FC<LeftRightContainerProps> = ({
           className={styles.imageContainer}
           style={{ order: imageFirst ? 1 : 2 }} // Adjust order based on imageFirst
         >
-          <Image src={src} alt={alt} width={550} height={550} fill={false} />
+          {/* <Image src={src} alt={alt} width={550} height={550} fill={false} /> */}
+          <img src={src} alt={alt} className={styles.image} />
         </div>
       </div>
     </div>

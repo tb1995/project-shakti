@@ -1,0 +1,52 @@
+@use '../../../styles/css/variables.scss' as vars;
+@use '../../../styles/css/breakpoints.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.content {
+  display: flex;
+  @include breakpoints.for-size(tablet-landscape-down) {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.textContainer {
+  flex: 1 1;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    order: 2;
+  }
+}
+
+.imageContainer {
+  flex: 1 1;
+  @include breakpoints.for-size(tablet-landscape-down) {
+    order: 1;
+  }
+}
+
+.image {
+  width: 600px;
+  height: 600px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.maxWidth {
+  max-width: 500px;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Separator.module.scss';
+import styles from './separator.module.scss';
 
 interface SeparatorProps {
   width: string;
@@ -12,7 +12,6 @@ const Separator: React.FC<SeparatorProps> = ({ width, thickness, color }) => {
     <div
       className={`${styles.separator} backgroundColor-${color}`}
       style={{
-        width,
         height: thickness,
       }}
     />

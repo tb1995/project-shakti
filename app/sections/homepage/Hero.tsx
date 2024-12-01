@@ -40,12 +40,10 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <Image
-          src="/shakti-hero-section.webp" // Path relative to the `public` folder
+        <img
+          src="/shakti-hero-section.webp"
           alt="Shakti Hero Section"
-          width={'600'}
-          height={'600'}
-          // Ensures the image covers the container without distortion
+          className={styles.heroImage}
         />
       </div>
     </section>

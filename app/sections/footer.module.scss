@@ -1,0 +1,62 @@
+@use '../../styles/css/variables.scss' as vars;
+@use '../../styles/css/breakpoints.scss' as breakpoints;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: vars.$primary;
+  max-width: 100vw;
+  overflow-x: none;
+  max-height: 250px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    flex-direction: column;
+    align-items: center;
+    max-height: 600px;
+  }
+}
+
+.logo {
+  align-self: center;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    margin-bottom: 20px;
+  }
+}
+
+.image {
+  width: 200px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    max-width: 250px; /* Adjust size of the logo */
+    height: auto;
+  }
+}
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.linkContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 10px; /* Adjust spacing as needed */
+}
+
+.link {
+  color: white; /* Default link color */
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: vars.$secondary; /* Hover link color */
+  }
+}

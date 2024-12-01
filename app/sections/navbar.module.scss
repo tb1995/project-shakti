@@ -1,0 +1,129 @@
+@use '../../styles/css/variables.scss' as vars;
+@use '../../styles/css/breakpoints.scss' as breakpoints;
+
+.container {
+  padding-left: 100px;
+  height: 80px;
+  display: flex;
+  width: 100%;
+  background-color: vars.$primary !important;
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  //   justify-content: space-evenly;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    max-width: 100vw;
+    overflow-x: none;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+}
+
+.containerShadow {
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 1);
+}
+
+.burger {
+  display: none;
+}
+
+.fullscreenMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 100;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logoImage {
+  width: 100px;
+  height: 100px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  flex: 0 1 60%;
+}
+
+.displayBlock {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  margin-bottom: 10px;
+  font-style: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  margin-bottom: 0;
+  //   margin-top: 20px;
+}
+
+.navLinksMobile li {
+  margin-top: 30px;
+}
+
+.linkMobile {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  margin-bottom: 0;
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navLinks {
+    display: none;
+  }
+
+  //   .container {
+  //     justify-content: space-between;
+  //   }
+
+  .logo {
+    width: 50px;
+    margin-left: 10px;
+  }
+
+  .logoDark {
+    width: 50px;
+    margin-top: 0;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    z-index: 101;
+  }
+
+  .active {
+    background-color: #fff !important;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+    background-color: #fff;
+  }
+}
