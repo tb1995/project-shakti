@@ -1,14 +1,35 @@
-@import './variables.scss';
+@use './variables.scss' as vars;
+
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100vw !important;
+  overflow-x: none !important;
+}
 
 h1 {
   font-size: 80px;
-  color: $primary;
+  color: vars.$primary;
   font-family: var(--font-poppins), sans-serif;
   font-weight: 500;
 }
 
+h2 {
+  font-size: 50px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+}
+
 li {
-  color: $primary !important;
+  color: vars.$primary !important;
 }
 
 p {
@@ -18,6 +39,18 @@ p {
 
 .colorWhite {
   color: white;
+}
+
+.colorPrimary {
+  color: vars.$primary;
+}
+
+.backgroundColor-primary {
+  background-color: vars.$primary;
+}
+
+.backgroundColor-secondary {
+  background-color: vars.$secondary;
 }
 
 /* Base button styles */
@@ -41,13 +74,13 @@ p {
 /* Primary button styles */
 .primary-button {
   background-color: white;
-  color: $primary; /* Replace $primary with your actual color variable */
-  border-color: $primary;
+  color: vars.$primary; /* Replace $primary with your actual color variable */
+  border-color: vars.$primary;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 
   &:hover {
     border-color: white;
-    background-color: $primary; /* Invert colors on hover */
+    background-color: vars.$primary; /* Invert colors on hover */
     color: white;
   }
 }
@@ -61,6 +94,6 @@ p {
 
   &:hover {
     background-color: white; /* Invert colors on hover */
-    color: $primary;
+    color: vars.$primary;
   }
 }

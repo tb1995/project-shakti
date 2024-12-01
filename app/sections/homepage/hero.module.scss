@@ -1,17 +1,17 @@
-@import '../../../styles/css/variables.scss';
-@import '../../../styles/css/breakpoints.scss';
+@use '../../../styles/css/variables.scss' as vars;
+@use '../../../styles/css/breakpoints.scss';
 
 .container {
   min-height: 100vh;
-  background-color: $primary;
+  background-color: vars.$primary;
   display: flex;
-  padding: 0 10px;
+  padding: 0 100px;
   align-items: center;
 }
 
 .textContainer {
   flex: 1 1;
-  padding: 0 30px;
+  // padding: 0 30px;
   display: flex;
   flex-direction: column;
 
@@ -22,7 +22,7 @@
   flex: 1 1;
   position: relative; /* Required for layout="fill" */
   width: 100%; /* Make it as wide as its parent */
-  height: 50vh; /* Ensure it occupies the desired height */
+  height: 60vh; /* Ensure it occupies the desired height */
 }
 
 .buttonContainer {
@@ -37,5 +37,5 @@
 }
 
 .secondaryColor {
-  color: $secondary;
+  color: vars.$secondary;
 }

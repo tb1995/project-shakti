@@ -1,0 +1,9 @@
+@use '../../styles/css/variables';
+@use '../../styles/css/breakpoints';
+
+.separator {
+  display: block;
+  border: none;
+  margin-left: 0;
+  padding: 0;
+}

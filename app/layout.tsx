@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${openSans.variable}`} // Add both fonts
+        className={`${poppins.variable} ${openSans.variable}`}
         style={{ margin: 0, padding: 0 }}
       >
         {children}

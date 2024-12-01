@@ -43,8 +43,9 @@ const Hero = () => {
         <Image
           src="/shakti-hero-section.webp" // Path relative to the `public` folder
           alt="Shakti Hero Section"
-          layout="fill" // Makes the image fill its parent
-          objectFit="contain" // Ensures the image covers the container without distortion
+          width={'600'}
+          height={'600'}
+          // Ensures the image covers the container without distortion
         />
       </div>
     </section>
