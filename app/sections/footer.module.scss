@@ -43,11 +43,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .links {
   display: flex;
   gap: 10px; /* Adjust spacing as needed */
+  @include breakpoints.for-size(tablet-landscape-down) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .link {
