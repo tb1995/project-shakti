@@ -19,6 +19,7 @@
   @include breakpoints.for-size(tablet-landscape-down) {
     flex-direction: column;
     margin-bottom: 30px;
+    align-items: center;
   }
 }
 

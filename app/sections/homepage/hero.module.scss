@@ -61,6 +61,12 @@
   margin-top: 10px;
   display: flex;
   gap: 40px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .heading {
