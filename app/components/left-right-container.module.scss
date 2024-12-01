@@ -57,6 +57,11 @@
   height: 550px;
   width: 550px;
 
+  @include breakpoints.for-size(laptop-down) {
+    height: 400px;
+    width: 400px;
+  }
+
   @include breakpoints.for-size(tablet-landscape-down) {
     height: 300px;
     width: 300px;
