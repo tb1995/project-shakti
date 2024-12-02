@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
       <div className={styles.imageContainer}>
         <img
-          src="/empower-artisans.webp"
+          src="/form-asset.webp"
           alt="Shakti Hero Section"
           className={styles.heroImage}
         />

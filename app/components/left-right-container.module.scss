@@ -42,9 +42,9 @@
 .imageContainer {
   background-size: cover;
 
-  @include breakpoints.for-size(tablet-landscape-up) {
-    flex: 0 1 50%;
-  }
+  //   @include breakpoints.for-size(tablet-landscape-up) {
+  //     flex: 0 1 50%;
+  //   }
 
   @include breakpoints.for-size(tablet-landscape-down) {
     display: flex;
@@ -61,8 +61,8 @@
   width: 550px;
 
   @include breakpoints.for-size(laptop-down) {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
   }
 
   @include breakpoints.for-size(tablet-landscape-down) {

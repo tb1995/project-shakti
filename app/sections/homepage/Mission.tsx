@@ -27,7 +27,7 @@ const Mission = () => {
         />
 
         <LeftRightContainer
-          src="/global-partnerships.webp"
+          src="/global.webp"
           alt="Culture and Heritage"
           title="Global Partnerships for Social Impact"
           description={`Through collaborations with under-resourced communities, such as its partnership with Manav Sadhna in India, Project Shakti supports initiatives like upcycling waste into marketable goods. These efforts empower women and children by providing sustainable income and educational opportunities. With a vision to expand globally, Project Shakti connects diverse stories and crafts with audiences valuing sustainability and social change.`}

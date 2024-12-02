@@ -30,7 +30,7 @@ const JoinUs = () => {
               height="600"
             /> */}
             <img
-              src="/form-asset.webp"
+              src="/global-partnerships.webp"
               alt="Join Us and Empower Artisans"
               className={styles.image}
             />
