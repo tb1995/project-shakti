@@ -6,6 +6,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+
+  @include breakpoints.for-size(tablet-landscape-down) {
+    margin-bottom: 30px;
+  }
 }
 
 .innerContainer {
@@ -39,8 +44,8 @@
 }
 
 .image {
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
 
   @include breakpoints.for-size(tablet-landscape-down) {
     height: 300px;
