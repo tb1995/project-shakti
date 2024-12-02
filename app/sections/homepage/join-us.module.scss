@@ -21,6 +21,7 @@
 
 .content {
   display: flex;
+  gap: 20px;
   @include breakpoints.for-size(tablet-landscape-down) {
     flex-direction: column;
     margin-bottom: 30px;
@@ -44,8 +45,8 @@
 }
 
 .image {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
 
   @include breakpoints.for-size(tablet-landscape-down) {
     height: 300px;
