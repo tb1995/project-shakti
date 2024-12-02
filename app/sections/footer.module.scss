@@ -14,7 +14,7 @@
   @include breakpoints.for-size(tablet-landscape-down) {
     flex-direction: column;
     align-items: center;
-    max-height: 600px;
+    max-height: 900px;
   }
 }
 
@@ -22,16 +22,26 @@
   align-self: center;
 
   @include breakpoints.for-size(tablet-landscape-down) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .image {
-  width: 200px;
+  width: 150px;
 
   @include breakpoints.for-size(tablet-landscape-down) {
     max-width: 250px; /* Adjust size of the logo */
     height: auto;
+  }
+}
+
+.imageShakti {
+  width: 150px;
+  @include breakpoints.for-size(tablet-landscape-down) {
+    width: 200px;
   }
 }
 .rightColumn {

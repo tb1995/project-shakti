@@ -18,12 +18,30 @@ const Footer = () => {
         <img
           src={'/logo-white.webp'}
           alt="Project Shakti Logo"
+          className={`${styles.image} ${styles.imageShakti}`}
+        />
+        <img
+          src={'/enactus-logo.webp'}
+          alt="Enactus Logo"
+          className={styles.image}
+        />
+        <img
+          src={'/uoe-logo.webp'}
+          alt="University of Exeter logo"
           className={styles.image}
         />
       </div>
       <div className={styles.rightColumn}>
         <p style={{ fontSize: '20px' }} className="colorWhite">
           You can find us at:
+        </p>
+        <p className="colorWhite">
+          Innovation Centre, University of Exeter
+          <br />
+          Stocker Rd, Exeter
+          <br />
+          England <br />
+          EX4 4PY
         </p>
         <nav className={styles.links}>
           <a

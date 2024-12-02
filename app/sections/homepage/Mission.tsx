@@ -5,7 +5,7 @@ import LeftRightContainer from '@/app/components/LeftRightContainer';
 
 const Mission = () => {
   return (
-    <section className={styles.container}>
+    <section id="mission" className={styles.container}>
       <div className={styles.heading}>
         <h2 className="colorPrimary">Our Mission</h2>
       </div>

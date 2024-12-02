@@ -10,7 +10,9 @@ const Hero = () => {
     <section className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.heading}>
-          Empowering <span className={styles.secondaryColor}>Artisans</span>{' '}
+          Project <span className={styles.secondaryColor}>Shakti.</span>
+          <br /> Empowering{' '}
+          <span className={styles.secondaryColor}>Artisans</span>{' '}
           <span className={styles.secondaryColor}>Transforming </span> Lives
         </h1>
 
@@ -32,7 +34,10 @@ const Hero = () => {
           <Button
             text={'Mission'}
             onClick={() => {
-              console.log('nothing yet either');
+              const section = document.getElementById('mission');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
             }}
             type={'secondary'}
           />

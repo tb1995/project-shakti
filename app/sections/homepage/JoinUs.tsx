@@ -5,7 +5,7 @@ import Form from '@/app/components/Form';
 
 const JoinUs = () => {
   return (
-    <div className={styles.container}>
+    <div id="join-us" className={styles.container}>
       <h2 className="colorPrimary">Join Us in Empowering Artisans</h2>
       <div className={styles.innerContainer}>
         <div className={styles.heading}></div>

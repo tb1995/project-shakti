@@ -37,13 +37,13 @@ const Navbar = () => {
       <div className={styles.logo} style={{ zIndex: 101 }}>
         {!showFullscreen ? (
           <img
-            src="/logo-white.webp"
+            src="/shakti-logo-white-without-text.webp"
             alt="Project Shakti Logo"
             className={styles.logoImage}
           />
         ) : (
           <img
-            src="/logo-white.webp"
+            src="/shakti-logo-white-without-text.webp"
             alt="Project Shakti Logo"
             className={styles.logoImage}
           />
@@ -52,7 +52,7 @@ const Navbar = () => {
 
       {/* Desktop Navigation Links */}
       <ul className={styles.navLinks}>
-        <a href="#home" className={styles.link}>
+        <a href="#mission" className={styles.link}>
           Mission
         </a>
         <a href="#about" className={styles.link}>
@@ -61,7 +61,7 @@ const Navbar = () => {
         <a href="#what-we-do" className={styles.link}>
           Products
         </a>
-        <a href="#contact" className={styles.link}>
+        <a href="#join-us" className={styles.link}>
           Contact Us
         </a>
       </ul>
@@ -81,7 +81,11 @@ const Navbar = () => {
       >
         <ul className={styles.navLinksMobile}>
           <li>
-            <a href="#home" onClick={navToggle} className={styles.linkMobile}>
+            <a
+              href="#mission"
+              onClick={navToggle}
+              className={styles.linkMobile}
+            >
               Mission
             </a>
           </li>
@@ -101,7 +105,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#contact"
+              href="#join-us"
               onClick={navToggle}
               className={styles.linkMobile}
             >
