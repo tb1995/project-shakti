@@ -72,7 +72,7 @@
 }
 
 .title {
-  max-width: 550px;
+  max-width: 450px;
 
   @include breakpoints.for-size(laptop-down) {
     max-width: 400px;
@@ -84,7 +84,7 @@
 
 .description {
   text-align: justify;
-  max-width: 500px;
+  max-width: 450px;
 
   @include breakpoints.for-size(laptop-down) {
     max-width: 400px;
