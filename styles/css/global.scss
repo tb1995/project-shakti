@@ -10,10 +10,14 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 55px;
   color: vars.$primary;
   font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
+
+  @include breakpoints.for-size(big-laptop-down) {
+    font-size: 40px;
+  }
 
   @include breakpoints.for-size(laptop-down) {
     font-size: 40px;
