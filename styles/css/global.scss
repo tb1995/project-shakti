@@ -16,7 +16,7 @@ h1 {
   font-weight: 500;
 
   @include breakpoints.for-size(laptop-down) {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   @include breakpoints.for-size(tablet-landscape-down) {
@@ -31,11 +31,11 @@ h2 {
   font-weight: 500;
 
   @include breakpoints.for-size(laptop-down) {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   @include breakpoints.for-size(tablet-landscape-down) {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
   }
 }
@@ -47,11 +47,11 @@ h3 {
   margin-top: 0;
 
   @include breakpoints.for-size(laptop-down) {
-    font-size: 27px;
+    font-size: 25px;
   }
 
   @include breakpoints.for-size(tablet-landscape-down) {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
   }
 }
