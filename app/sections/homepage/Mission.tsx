@@ -11,7 +11,7 @@ const Mission = () => {
       </div>
       <div className="miniSections">
         <LeftRightContainer
-          src="/empower-artisans.webp"
+          src="/empower.webp"
           alt="Empower Artisans"
           title="Empower Artisans Through Global Connections"
           description='Project Shakti is a social enterprise dedicated to connecting international markets with the stories, talents, and crafts of local communities. Named after "Shakti," meaning "power," it empowers artisans by creating sustainable economic opportunities while honouring their traditions. By introducing handcrafted products to global audiences, it bridges cultural gaps and fosters appreciation for local craftsmanship.'

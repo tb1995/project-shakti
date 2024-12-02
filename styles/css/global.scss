@@ -10,9 +10,9 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: vars.$primary;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
 
   @include breakpoints.for-size(laptop-down) {
@@ -20,14 +20,14 @@ h1 {
   }
 
   @include breakpoints.for-size(tablet-landscape-down) {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
 }
 
 h2 {
   font-size: 50px;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
 
   @include breakpoints.for-size(laptop-down) {
@@ -42,7 +42,7 @@ h2 {
 
 h3 {
   font-size: 30px;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-weight: 500;
   margin-top: 0;
 
@@ -61,11 +61,13 @@ li {
 }
 
 p {
-  font-family: var(--font-open-sans), sans-serif;
+  font-family: var(--font-quicksand), sans-serif;
   font-weight: 300; // Use the specified weight
+  font-size: 20px;
 
   @include breakpoints.for-size(tablet-landscape-down) {
     text-align: center;
+    font-size: 16px;
   }
 }
 

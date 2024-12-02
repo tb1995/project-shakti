@@ -11,8 +11,7 @@ const Hero = () => {
       <div className={styles.textContainer}>
         <h1 className={styles.heading}>
           Empowering <span className={styles.secondaryColor}>Artisans</span>{' '}
-          <br /> <span className={styles.secondaryColor}>Transforming </span>{' '}
-          Lives
+          <span className={styles.secondaryColor}>Transforming </span> Lives
         </h1>
 
         <p className="colorWhite">
@@ -41,7 +40,7 @@ const Hero = () => {
       </div>
       <div className={styles.imageContainer}>
         <img
-          src="/shakti-hero-section.webp"
+          src="/empower-artisans.webp"
           alt="Shakti Hero Section"
           className={styles.heroImage}
         />
